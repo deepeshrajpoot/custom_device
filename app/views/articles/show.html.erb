@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="col-md-8 offset-md-2"> 
+    <div class="card mt-5 bold">
+      <div class="card-body">
+        <div class="card">
+         <div class="card-body">
+
+            <p>
+             <strong>Title:</strong>
+             <%= @article.title %>
+            </p>
+
+            <p>
+             <strong>Text:</strong>
+             <%= @article.text %>
+            </p>
+
+            <%= link_to 'Edit', edit_article_path(@article), class: "btn btn-primary fa fa-pencil" %> 
+          
+            <%= link_to 'Back', articles_path, class: "btn btn-danger fa fa-hand-o-left" %>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
