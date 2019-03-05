@@ -64,4 +64,5 @@ gem 'jquery-rails'
 gem 'devise'
 gem 'bootstrap'
 gem "font-awesome-rails"
-
+gem 'tinymce-rails'
+gem 'tinymce-rails-imageupload'

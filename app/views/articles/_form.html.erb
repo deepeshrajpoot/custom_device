@@ -4,6 +4,7 @@
       <div class="card-body"> 
         <div class="card">
           <div class="card-body">
+            <%= tinymce_assets %>
             <%= form_for @article do |form| %>
             <% if @article.errors.any? %>
             <div id="error_explanation">
@@ -26,7 +27,7 @@
 
             <div class="form-group">
               <h3><%= form.label :Blog %><br></h3>
-              <%= form.text_area :text, class: "form-control", autocomplete: "off" %>
+              <%= form.text_area :text, class: "tinymce form-control",:rows => 10, :cols => 30, autocomplete: "off" %>
             </div>
 
             <div class="form-group">
@@ -34,6 +35,7 @@
             </div>
             <%= link_to 'Back', articles_path, class: "btn btn-primary fa fa-hand-o-left" %>
             <% end %>
+            <%= tinymce %>
           </div> 
         </div>
       </div> 

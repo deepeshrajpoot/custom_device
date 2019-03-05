@@ -13,6 +13,8 @@
 //= require rails-ujs
 //= require jquery3
 //= require jquery.min
+//= require tinymce
+//= require tinymce-jquery
 //= require bootstrap
 //= require popper
 //= require activestorage
